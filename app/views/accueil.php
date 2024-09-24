@@ -99,9 +99,9 @@ function displayAccueil()
     <!-- Additional required wrapper -->
     <article class="swiper-wrapper">
     <!-- Slides -->
-    <article class="swiper-slide" style="background-image: url(./picture/apartement/appartement_marseille.jpg);" > MARSEILLE</article>
-    <article class="swiper-slide" style="background-image: url(./picture/apartement/appartement_montpellier.jpg);">MONTPELLIER</article>
-    <article class="swiper-slide" style="background-image: url(./picture/apartement/appartement_paris.jpeg);">PARIS</article>
+    <article class="swiper-slide" style="background-image: url(Assets/picture/apartement/appartement_marseille.jpg);" > MARSEILLE</article>
+    <article class="swiper-slide" style="background-image: url(Assets/picture/apartement/appartement_montpellier.jpg);">MONTPELLIER</article>
+    <article class="swiper-slide" style="background-image: url(Assets/picture/apartement/appartement_paris.jpeg);">PARIS</article>
     </article>
     <!-- If we need navigation buttons -->
     <article class="swiper-button-prev"></article>

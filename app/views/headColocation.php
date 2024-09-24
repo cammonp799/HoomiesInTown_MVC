@@ -9,8 +9,8 @@ function displayheadcolocation ()
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/colocation.css" />
+    <title><?php echo $title ?></title>
+    <link rel="stylesheet" href="Assets/css/colocation.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -34,7 +34,9 @@ function displayheadcolocation ()
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Font awesome cdn-->
   </head>
+
 <?php
     return ob_get_clean();
 }

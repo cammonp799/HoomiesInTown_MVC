@@ -20,7 +20,7 @@ function displayLogin()
             <input type="submit" value="Connexion" class="btn_login" />
         </article>
         <p class="no_account">
-            Vous n'avez pas de compte ? <a href="register.html">Inscrivez-vous</a>
+            Vous n'avez pas de compte ? <a href="/register">Inscrivez-vous</a>
         </p>
     </form>
     <!-- Formulaire de connexion -->

@@ -1,8 +1,6 @@
 <?php
-
 class AccueilController
 {
-
     public function index()
     {
         $title = "Accueil";
@@ -16,10 +14,8 @@ class AccueilController
         include __DIR__ . '/../views/footer.php';
 
         echo displayHeadAccueil($title);
-        echo displayHeader();
+        echo displayHeaderAccueil();
         echo displayAccueil();
         echo displayFooter();
-    
-
     }
 }

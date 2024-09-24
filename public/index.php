@@ -49,7 +49,7 @@ function createController($controllerName, $db = null)
 // Parsing the URL to determine which controller and action to invoke
 $request = trim($_SERVER['REQUEST_URI'], '/');
 $request = parse_url($request, PHP_URL_PATH);
-
+echo $request;
 $routeFound = false;
 
 // Créez une connexion à la base de données

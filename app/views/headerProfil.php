@@ -1,5 +1,5 @@
 <?php
-function displayHeaderRegister()
+function displayHeaderProfil()
 {
     ob_start();
     ?>
@@ -25,7 +25,7 @@ function displayHeaderRegister()
         
         <!-- Start Dropdown Menu -->
         <section class="dropdown_menu">
-            <li><a href="/">Accueil</a></li>
+            <li><a href="./index.html">Accueil</a></li>
             <li><a href="#Apropos">A propos</a></li>
             <li><a href="/colocation">Colocations</a></li>
             <li><a href="/login">Se connecter</a></li>
@@ -34,9 +34,9 @@ function displayHeaderRegister()
         <!-- End Dropdown Menu -->
 
         <section class="contanier_welcome">
-            <h1>INSCRIPTION</h1>
+            <h1>CONNEXION</h1>
             <p>
-            Inscrivez-vous <br/>
+            Connectez-vous <br />
             pour trouver la colocation parfaite
             </p>
         </section>

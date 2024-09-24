@@ -10,16 +10,16 @@ function displayHeaderColocation ()
       <section class="navbar">
         <article>
           <img
-            src="../picture/logo/black_logo.png"
+            src="/Assets/picture/logo/black_logo.png"
             alt="Black Logo"
             class="black_logo"
           />
         </article>
         <ul class="links">
-          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="/">Accueil</a></li>
           <li><a href="#Apropos">A propos</a></li>
-          <li><a href="../pages/colocation.html">Colocations</a></li>
-          <li><a href="../pages/login.html">Se connecter</a></li>
+          <li><a href="/colocation">Colocations</a></li>
+          <li><a href="/login">Se connecter</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <article class="toggle_btn">
@@ -29,10 +29,10 @@ function displayHeaderColocation ()
 
       <!-- Start Dropdown Menu -->
       <section class="dropdown_menu">
-        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="/">Accueil</a></li>
         <li><a href="#Apropos">A propos</a></li>
-        <li><a href="../pages/colocation.html">Colocations</a></li>
-        <li><a href="../pages/login.html">Se connecter</a></li>
+        <li><a href="/colocation">Colocations</a></li>
+        <li><a href="/login">Se connecter</a></li>
         <li><a href="#Contact">Contact</a></li>
       </section>
       <!-- End Dropdown Menu -->

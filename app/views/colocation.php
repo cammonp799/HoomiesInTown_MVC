@@ -28,7 +28,7 @@ function displayColocation()
                     <!--1-->
                     <article id="appart1">
                         <img
-                        src="../picture/apartement/appartement_LeHavre.jpeg"
+                        src="Assets/picture/apartement/appartement_LeHavre.jpeg"
                         alt="Appartement Bordeaux"
                         />
                         <article class="container-list">
@@ -107,7 +107,7 @@ function displayColocation()
         <!--2-->
         <article id="appart2">
             <img
-            src="../picture/apartement/appartement_lille.jpg"
+            src="Assets/picture/apartement/appartement_lille.jpg"
             alt="Appartement Lille"
             />
             
@@ -191,7 +191,7 @@ function displayColocation()
               <!--3-->
               <article id="appart3">
                 <img
-                  src="../picture/apartement/appartement_montpellier.jpg"
+                  src="Assets/picture/apartement/appartement_montpellier.jpg"
                   alt="Appartement Montpellier"
                 />
 
@@ -274,7 +274,7 @@ function displayColocation()
               <!--4-->
               <article id="appart4">
                 <img
-                  src="../picture/apartement/appartement_toulouse.jpg"
+                  src="Assets/picture/apartement/appartement_toulouse.jpg"
                   alt="Appartement Toulouse"
                 />
 
@@ -357,7 +357,7 @@ function displayColocation()
               <!--5-->
               <article id="appart5">
                 <img
-                  src="../picture/apartement/appartement_marseille.jpg"
+                  src="Assets/picture/apartement/appartement_marseille.jpg"
                   alt="Appartement Lyon"
                 />
 
@@ -440,7 +440,7 @@ function displayColocation()
               <!--6-->
               <article id="appart6">
                 <img
-                  src="../picture/apartement/appartement_paris.jpeg"
+                  src="Assets/picture/apartement/appartement_paris.jpeg"
                   alt="Appartement Paris"
                 />
 

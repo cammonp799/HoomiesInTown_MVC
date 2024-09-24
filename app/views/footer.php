@@ -7,7 +7,7 @@ function displayFooter()
     <footer>
         <section class="footer_content">
         <section class="footer_logo">
-            <img src="./picture/logo/white_logo.png" alt="white logo image">
+            <img src="Assets/picture/logo/white_logo.png" alt="white logo image">
             <h2>HOOMIES IN TOWN</h2>
         </section>
         
@@ -74,8 +74,9 @@ function displayFooter()
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../public/javascript/dropdownMenu.js"></script>
-    <script src="../public/javascript/carrousel.js"></script>
+    <script src="/Assets/javascript/dropdownMenu.js"></script>
+    <script src="/Assets/javascript/carrousel.js"></script>
+    <script src="/Assets/javascript/colocation.js"></script>
 </body>
 </html>
 <?php
