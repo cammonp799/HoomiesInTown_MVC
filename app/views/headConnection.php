@@ -1,5 +1,5 @@
 <?php
-function displayheadProfil($title) 
+function displayheadConnection($title) 
 {
     ob_start();
 ?>

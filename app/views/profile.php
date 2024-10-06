@@ -1,5 +1,5 @@
 <?php
-function displayProfil()
+function displayProfile()
 {
     ob_start();
     ?>

@@ -5,13 +5,12 @@ $routes = [
 
     // Route pour la page d'accueil
     '' => [
-        'controller' => 'AccueilController',
+        'controller' => 'HomePageController',
         'action' => 'index'
     ],
-
-    // Route pour la page de connexion
-    'login' => [
-        'controller' => 'LoginController',
+    // Route pour la page de colocation
+    'colocation' => [
+        'controller' => 'ColocationController',
         'action' => 'index'
     ],
 
@@ -21,11 +20,25 @@ $routes = [
         'action' => 'index'
     ],
 
-    // Route pour la page de colocation
-    'colocation' => [
-        'controller' => 'ColocationController',
+    // Route pour la page de connexion
+    'connection' => [
+        'controller' => 'ConnectionController',
         'action' => 'index'
     ],
+
+    // Route pour la page de profil
+    'profile' => [
+        'controller' => 'ProfileController',
+        'action' => 'index'
+    ],
+
+    // Route pour la page de deconnexion
+    'signout' => [
+        'controller' => 'SignOutController',
+        'action' => 'index'
+    ],
+
+    
 
 
     // Route par défaut pour les pages non trouvées (404)

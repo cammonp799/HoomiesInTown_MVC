@@ -1,5 +1,5 @@
 <?php
-function displayLogin() 
+function displayConnection() 
 {
     ob_start()
 ?>

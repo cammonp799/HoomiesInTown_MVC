@@ -1,5 +1,5 @@
 <?php
-function displayHeadAccueil($title)
+function displayHeadHomePage($title)
 {
     ob_start();
     ?>

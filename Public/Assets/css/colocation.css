@@ -8,6 +8,10 @@
 }
 
 body {
+  background-image: url(/Assets/picture/login/picture_login.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Raleway", serif;
   color: black;
   height: 100vh;

@@ -1,5 +1,5 @@
 <?php
-function displayHeaderLogin()
+function displayHeaderProfile()
 {
     ob_start();
     ?>

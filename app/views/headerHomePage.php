@@ -1,13 +1,16 @@
 <?php
-function displayHeaderProfil()
+function displayHeaderHomePage()
 {
     ob_start();
     ?>
-    
+
     <!--Start Header -->
 <body>
     <header>
         <section class="navbar">
+            <video autoplay muted loop class="header_video">
+                <source src="Assets/video/video-accueil.MP4" type="video/mp4" alt="Header Video">
+            </video>
             <article>
             <img src="Assets/picture/logo/black_logo.png" alt="Black Logo" class="black_logo">
             </article>
@@ -25,7 +28,7 @@ function displayHeaderProfil()
         
         <!-- Start Dropdown Menu -->
         <section class="dropdown_menu">
-            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="/">Accueil</a></li>
             <li><a href="#Apropos">A propos</a></li>
             <li><a href="/colocation">Colocations</a></li>
             <li><a href="/login">Se connecter</a></li>
@@ -34,11 +37,8 @@ function displayHeaderProfil()
         <!-- End Dropdown Menu -->
 
         <section class="contanier_welcome">
-            <h1>CONNEXION</h1>
-            <p>
-            Connectez-vous <br />
-            pour trouver la colocation parfaite
-            </p>
+            <h1>BIENVENUE</h1>
+            <p>Hoomies In Town <br>Les spécialistes de la colocation</p>
         </section>
 
     </header>

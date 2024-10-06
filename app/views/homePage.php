@@ -1,5 +1,5 @@
 <?php
-function displayAccueil()
+function displayHomePage()
 {
     ob_start();
     ?>
