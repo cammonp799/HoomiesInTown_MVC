@@ -12,7 +12,7 @@ class SignOutController
         session_destroy();  
 
         // Redirection vers la page de connexion
-        header("Location: /login");
+        header("Location: /Connection");
         exit();
     }
 }

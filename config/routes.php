@@ -8,6 +8,7 @@ $routes = [
         'controller' => 'HomePageController',
         'action' => 'index'
     ],
+    
     // Route pour la page de colocation
     'colocation' => [
         'controller' => 'ColocationController',
@@ -37,9 +38,6 @@ $routes = [
         'controller' => 'SignOutController',
         'action' => 'index'
     ],
-
-    
-
 
     // Route par défaut pour les pages non trouvées (404)
     '404' => [

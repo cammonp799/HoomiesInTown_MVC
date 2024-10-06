@@ -5,7 +5,7 @@ class RegisterController
     {
         $title = "Register";
         // Inclure la vue pour le head
-        include __DIR__ . '/../views/headLogin.php';
+        include __DIR__ . '/../views/headConnection.php';
         // Inclure la vue pour le header
         include __DIR__ . '/../views/headerRegister.php';
         // Inclure la vue pour le register
