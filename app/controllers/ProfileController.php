@@ -3,7 +3,7 @@ class ProfileController
 {
     public function index()
     {
-        $title = "Profil";
+        
         // Inclure la vue pour le head
         include __DIR__ . '/../views/headProfile.php';
         // Inclure la vue pour le header

@@ -8,22 +8,21 @@ $routes = [
         'controller' => 'HomePageController',
         'action' => 'index'
     ],
-    
+
     // Route pour la page de colocation
     'colocation' => [
         'controller' => 'ColocationController',
+        'action' => 'index'
+    ],
+     // Route pour la page de connexion
+    'connection' => [
+        'controller' => 'ConnectionController',
         'action' => 'index'
     ],
 
     // Route pour la page d'enregistrement
     'register' => [
         'controller' => 'RegisterController',
-        'action' => 'index'
-    ],
-
-    // Route pour la page de connexion
-    'connection' => [
-        'controller' => 'ConnectionController',
         'action' => 'index'
     ],
 

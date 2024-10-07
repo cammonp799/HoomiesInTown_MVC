@@ -13,7 +13,7 @@ class RegisterController
         // Inclure la vue pour le footer
         include __DIR__ . '/../views/footer.php';
 
-        echo displayHeadLogin($title);
+        echo displayHeadConnection($title);
         echo displayHeaderRegister();
         echo displayRegister();
         echo displayFooter();
