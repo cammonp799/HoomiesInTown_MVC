@@ -4,6 +4,7 @@
 require_once '../env.php'; // Pour les variables d'environnement
 require_once '../config/db.php'; // Pour la connexion à la base de données
 require_once '../config/routes.php'; // Pour les routes
+require_once '../app/models/UserModel.php'; // Pour les routes
 
 // Fonction d'autoload pour les classes
 function autoload($class_name)
@@ -34,10 +35,9 @@ function createController($controllerName, $db = null)
         //     $utilisateurModel = new UtilisateurModel($db);
         //     return new DiscussionController($messageModel, $utilisateurModel);
 
-        case 'ConnexionController':
-        // case 'UtilisateurController':
-        //     $model = new UtilisateurModel($db);
-        //     return new $controllerName($model);
+        case 'ConnectionController':
+            $model = new UserModel($db);
+            return new $controllerName($model);
 
         default:
             // Création du contrôleur sans dépendances

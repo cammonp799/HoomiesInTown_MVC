@@ -46,7 +46,7 @@ function displayRegister()
         </article>
 
         <p class="no_account">
-            Vous avez deja un compte ? <a href="/login">Connectez-vous</a>
+            Vous avez deja un compte ? <a href="/connection">Connectez-vous</a>
         </p>
     </form>
     </main>

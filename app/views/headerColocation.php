@@ -19,7 +19,7 @@ function displayHeaderColocation ()
           <li><a href="/">Accueil</a></li>
           <li><a href="#Apropos">A propos</a></li>
           <li><a href="/colocation">Colocations</a></li>
-          <li><a href="/login">Se connecter</a></li>
+          <li><a href="/connection">Se connecter</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <article class="toggle_btn">
@@ -32,7 +32,7 @@ function displayHeaderColocation ()
         <li><a href="/">Accueil</a></li>
         <li><a href="#Apropos">A propos</a></li>
         <li><a href="/colocation">Colocations</a></li>
-        <li><a href="/login">Se connecter</a></li>
+        <li><a href="/connection">Se connecter</a></li>
         <li><a href="#Contact">Contact</a></li>
       </section>
       <!-- End Dropdown Menu -->
