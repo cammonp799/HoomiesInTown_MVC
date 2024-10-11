@@ -18,11 +18,11 @@ function displayRegister()
         </article>
         <article>
             <label>Date de naissance</label>
-            <input type="date" name="DatNais" required />
+            <input type="date" name="date_naissance" required />
         </article>
         <article>
             <label>Date d'inscription</label>
-            <input type="date" name="DatIns" required />
+            <input type="date" name="date_inscription" required />
         </article>
         <article>
             <label>Téléphone</label>
@@ -34,7 +34,7 @@ function displayRegister()
         </article>
         <article>
             <label>Mot de passe</label>
-            <input type="password" name="pwd" required />
+            <input type="password" name="mot_de_passe" required />
         </article>
         <article>
             <input

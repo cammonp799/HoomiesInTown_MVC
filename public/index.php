@@ -5,7 +5,6 @@ require_once '../env.php'; // Pour les variables d'environnement
 require_once '../config/db.php'; // Pour la connexion à la base de données
 require_once '../config/routes.php'; // Pour les routes
 require_once '../app/models/UserModel.php'; // Pour les routes
-
 // Fonction d'autoload pour les classes
 function autoload($class_name)
 {
@@ -22,7 +21,6 @@ function autoload($class_name)
         return;
     }
 }
-
 // Enregistrement de l'autoloader
 spl_autoload_register('autoload');
 
@@ -39,13 +37,15 @@ function createController($controllerName, $db = null)
             $model = new UserModel($db);
             return new $controllerName($model);
 
+        case 'RegisterController':
+            $model = new UserModel($db);
+            return new $controllerName($model);
+
         default:
             // Création du contrôleur sans dépendances
             return new $controllerName();
     }
 }
-
-
 // Parsing the URL to determine which controller and action to invoke
 $request = trim($_SERVER['REQUEST_URI'], '/');
 $request = parse_url($request, PHP_URL_PATH);

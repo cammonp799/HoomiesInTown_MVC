@@ -17,20 +17,21 @@ class ConnectionController
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email = htmlentities(strip_tags(stripcslashes(trim($_POST['email']))), ENT_QUOTES, 'UTF-8');
             $password = htmlentities(strip_tags(stripcslashes(trim($_POST['mot_de_passe']))), ENT_QUOTES, 'UTF-8');
-
+            
 
             // Chercher l'utilisateur par email
-            $user = $this->utilisateurModel->findUserByEmail($email);
+            $user = $this->userModel->getUserByEmail($email);
 
             // Vérifier si l'utilisateur existe et si le mot de passe est correct
-            if ($user && $this->utilisateurModel->verifyPassword($password, $user['Mot_de_passe'])) {
+            if ($user && $this->userModel->verifyPassword($password, $user['mot_de_passe'])) {
                 // Connexion réussie, démarrer une session
                 $_SESSION['id'] = $user['Id_Utilisateur'];
                 $_SESSION['nom'] = $user['Nom'];
                 $_SESSION['prenom'] = $user['Prénom'];
+    
 
                 // Redirection vers la page utilisateur
-                header("Location: /profile");
+                header("Location:/profile");
                 exit();
             } else {
                 $error = "Email ou mot de passe incorrect.";
