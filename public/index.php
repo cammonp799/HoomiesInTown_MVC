@@ -41,6 +41,10 @@ function createController($controllerName, $db = null)
             $model = new UserModel($db);
             return new $controllerName($model);
 
+        case 'ProfileController':
+            $model = new UserModel($db);
+            return new $controllerName($model); 
+
         default:
             // Création du contrôleur sans dépendances
             return new $controllerName();
@@ -53,6 +57,7 @@ echo $request;
 $routeFound = false;
 
 // Créez une connexion à la base de données
+
 $db = getDatabaseConnection();
 
 foreach ($routes as $route => $params) {

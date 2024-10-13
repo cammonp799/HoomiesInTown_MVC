@@ -8,6 +8,7 @@ class UserModel
         $this->db = $db;
     }
 
+    //Add a new user
     public function addUser($nom, $prenom, $date_naissance, $date_inscription, $telephone, $email, $mot_de_passe)
     {
         $sql = "INSERT INTO utilisateurs (nom, prenom, date_naissance, date_inscription, telephone, email, mot_de_passe) VALUES (:nom, :prenom, :date_naissance, :date_inscription, :telephone, :email, :mot_de_passe)";
@@ -28,22 +29,26 @@ class UserModel
         }
     }
 
+    // Find user by email
     public function getUserByEmail($email)
     {
-        $sql = "SELECT * FROM utilisateurs WHERE email = :email";
-        try {
-            $statement = $this->db->prepare($sql);
-            $statement->execute(['email' => $email]);
-            return $statement->fetch(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            // Gestion des erreurs
-            throw new Exception("Erreur lors de la requête : " . $e->getMessage());
-        }
+        $statement = $this->db->prepare("SELECT * FROM Utilisateurs WHERE Email = :email");
+        $statement->bindParam(':email', $email);
+        $statement->execute();
+        return $statement->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function verifyPassword($enteredPassword, $storedPassword)
+    
+    // Verify password
+    public function verifyPassword($password, $hashedPassword)
     {
-        return password_verify($enteredPassword, $storedPassword);
+        return password_verify($password, $hashedPassword);
     }
+
+    
+
+    
 }
+
+
 ?>
